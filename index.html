@@ -12,7 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>WebStudio</title>
   </head>
   <body>
@@ -22,30 +22,34 @@
           ><span class="web">Web</span>Studio</a
         >
         <nav class="header__nav">
-          <ul class="nav__button list">
+          <ul class="header__nav--button list">
             <li>
-              <a class="nav__item nav--current" href="./index.html">Студія</a>
+              <a
+                class="header__nav--item header__nav--current"
+                href="./index.html"
+                >Студія</a
+              >
             </li>
             <li>
-              <a class="nav__item" href="./portfolio.html">Портфоліо</a>
+              <a class="header__nav--item" href="./portfolio.html">Портфоліо</a>
             </li>
             <li>
-              <a class="nav__item" href="./index.html">Контакти</a>
+              <a class="header__nav--item" href="./index.html">Контакти</a>
             </li>
           </ul>
         </nav>
         <ul class="header__contacts list">
           <li>
-            <a class="nav__item" href="mailto:info@devstudio.com">
-              <svg class="nav__icon" width="16" height="12">
+            <a class="header__nav--item" href="mailto:info@devstudio.com">
+              <svg class="header__contacts--icon" width="16" height="12">
                 <use href="./images/icons.svg#email"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="nav__item" href="tel:+380961111111">
-              <svg class="nav__icon" width="10" height="16">
+            <a class="header__nav--item" href="tel:+380961111111">
+              <svg class="header__contacts--icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +380961111111</a
@@ -55,21 +59,21 @@
       </div>
     </header>
     <main class="main-container">
-      <section class="hero-section sections">
+      <section class="hero sections">
         <div class="container">
           <h1 class="hero__head">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero__button" data-modal-open>
             Замовити послугу
           </button>
           <div class="backdrop is-hidden" data-modal>
-            <div class="modal-container">
+            <div class="modal">
               <button data-modal-close class="modal__button" type="submit">
                 <svg class="modal__icon">
                   <use href="./images/icons.svg#close"></use>
                 </svg>
               </button>
               <p class="modal__head">Залиште свої дані, ми вам передзвонимо</p>
-              <form name="form">
+              <form name="form" class="form">
                 <label class="form__label" for="person-name">Ім'я</label>
                 <div class="form__field">
                   <input
@@ -518,20 +522,20 @@
         </div>
         <div class="footer-feedback">
           <form name="contact-form">
-            <p class="feedback__label" for="person-email">
+            <p class="footer__feedback--label" for="person-email">
               Підпишіться на розсилку
             </p>
-            <div class="feedback__field">
+            <div class="footer__feedback--field">
               <input
-                class="feedback__input"
+                class="footer__feedback--input"
                 type="email"
                 name="person-email"
                 id="person-email"
                 placeholder="Email"
               />
-              <button type="submit" class="feedback__btn">
+              <button type="submit" class="footer__feedback--btn">
                 Підписатися
-                <svg class="feedback__svg">
+                <svg class="footer__feedback--svg">
                   <use href="./images/icons.svg#send"></use>
                 </svg>
               </button>
