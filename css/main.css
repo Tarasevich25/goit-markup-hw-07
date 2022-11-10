@@ -750,7 +750,7 @@ img {
           justify-content: center;
 }
 
-.socials__link {
+.footer__socials--link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -775,11 +775,11 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.socials__link:hover, .socials__link:focus {
+.footer__socials--link:hover, .footer__socials--link:focus {
   background-color: #2196f3;
 }
 
-.socials__icon {
+.footer__socials--icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
